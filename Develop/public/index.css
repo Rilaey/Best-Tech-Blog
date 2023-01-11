@@ -59,6 +59,10 @@ span {
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* login form */
 form {
     width: 50%;

@@ -1,16 +1,17 @@
-
-    <div class="card-whole">
-    <div class="card-head">
-        <div class="card-title">
-        <h2>{{blog_title}}</h2>
-        </div>
-        <div class="card-author">
-        <p class="author">Posted by {{blog_author}}</p>
-        </div>
+<div class="card-whole">
+  <div class="card-head">
+    <div class="card-title">
+        {{#each blogs}}
+      <h2>{{title}}</h2>
     </div>
-    <div class="card-body">
-        <p class="card-message">
-        {{blog_message}}
-        </p>
+    <div class="card-author">
+      <p class="author">Posted by {{author}}</p>
     </div>
-    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-message">
+      {{message}}
+    </p>
+    {{/each}}
+  </div>
+</div>
