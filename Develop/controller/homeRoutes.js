@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
       include: [{ model: User }],
     });
     const allBlogs = blogs.map((x) => x.get({ plain: true }));
-
+    console.log(allBlogs)
     res.render("home", {
       allBlogs,
     });

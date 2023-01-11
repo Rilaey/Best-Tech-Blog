@@ -1,17 +1,17 @@
+{{#each allBlogs}}
 <div class="card-whole">
   <div class="card-head">
-    <div class="card-title">
-        {{#each blogs}}
-      <h2>{{title}}</h2>
+    <div class="card-title"> 
+      <h2>Title: {{blog_title}}</h2>
     </div>
     <div class="card-author">
-      <p class="author">Posted by {{author}}</p>
+      <p class="author">Posted by {{user.username}}</p>
     </div>
   </div>
   <div class="card-body">
     <p class="card-message">
-      {{message}}
+      {{blog_message}}
     </p>
-    {{/each}}
   </div>
 </div>
+{{/each}}
