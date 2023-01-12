@@ -9,6 +9,7 @@ header {
 
 main, body {
     background-color: lightgray;
+    height: 100%;
 }
 
 .nav-links {
@@ -67,4 +68,15 @@ a {
 form {
     width: 50%;
     margin: 50px auto;
+}
+
+/* user dashboard */
+.create-new {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.createBtn {
+    font-size: 24px;
 }
