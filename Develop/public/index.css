@@ -2,6 +2,10 @@
     margin: 0 auto;
 }
 
+body {
+    height: 100%;
+}
+
 header {
     background-color: burlywood;
     padding-bottom: 60px;
@@ -79,4 +83,25 @@ form {
 
 .createBtn {
     font-size: 24px;
+}
+
+.whole {
+    display: flex;
+}
+
+section {
+    width: 50%;
+}
+
+form {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.whole {
+    background-color: lightcyan;
 }
