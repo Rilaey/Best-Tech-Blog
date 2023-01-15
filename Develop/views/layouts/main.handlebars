@@ -17,11 +17,11 @@
       <div class="nav-bar">
         <a href="/" class="nav-links">Home</a>
         <a href="/dashboard" class="nav-links">Dashboard</a>
-        {{#unless login}}
+        {{#unless logged_in}}
         <a href="/login" class="nav-links">Log in</a>
         {{/unless}}
-        {{#if login}}
-        <a href="/login" class="nav-links">Log Out</a>
+        {{#if logged_in}}
+        <a href="/home" class="nav-links">Log Out</a>
         {{/if}}
       </div>
       <div class="main-header">
