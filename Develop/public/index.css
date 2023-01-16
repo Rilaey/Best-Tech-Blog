@@ -116,4 +116,7 @@ form {
 	cursor: pointer;
 	outline: inherit; */
 }
-
+.header-home {
+    text-decoration: none;
+    cursor: pointer;
+}
