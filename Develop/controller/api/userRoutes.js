@@ -11,8 +11,8 @@ router.post('/', async (req, res) => {
     });
 
     req.session.save(() => {
-      req.session.logged_In = true;
-
+      req.session.logged_in = true;
+      console.log(req.session)
       res.status(200).json(dbUserData);
     });
   } catch (err) {
@@ -47,7 +47,7 @@ router.post('/login', async (req, res) => {
     }
 
     req.session.save(() => {
-      req.session.logged_In = true;
+      req.session.logged_in = true;
       console.log(
         '🚀 ~ file: user-routes.js ~ line 57 ~ req.session.save ~ req.session.cookie',
         req.session.cookie
@@ -65,10 +65,12 @@ router.post('/login', async (req, res) => {
 
 // Logout
 router.post('/logout', (req, res) => {
-  if (req.session.logged_In) {
+  if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
     });
+
+    //res.render('home')
   } else {
     res.status(404).end();
   }
