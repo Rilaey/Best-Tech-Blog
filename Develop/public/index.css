@@ -3,7 +3,7 @@
 }
 
 body {
-    height: 100%;
+    height: 100vmax;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
 }
 
 main, body {
-    background-color: lightgray;
+    /* background-color: lightgray; */
     height: 100%;
 }
 

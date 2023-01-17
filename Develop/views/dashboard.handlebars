@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome back, {{user.username}}!</h2>
+    <h2>Welcome back, {{username}}!</h2>
   </div>
 </div>
 
@@ -8,7 +8,7 @@
   <div class="col-md-6">
     <h3>New Blog?</h3>
 
-    <form class="form new-project-form">
+    <form class="form new-blog">
       <div class="form-group">
         <label for="project-name">Blog Title:</label>
         <input
@@ -31,7 +31,7 @@
       </div>
     </form>
   </div>
-{{!-- 
+
   {{#if blogs.length}}
     <div class="col-md-6 project-list">
       <h3>Current Blogs:</h3>
@@ -39,10 +39,13 @@
       {{#each blogs as |blog|}}
         <div class="row mb-2">
           <div class="col-md-8">
-            <h4><a href="/project/{{blog.id}}">{{blog.blog_title}}</a></h4>
+            <h2>{{blog.blog_title}}</h2>
+            <p>{{blog.blog_message}}</p>
           </div>
         </div>
       {{/each}}
     </div>
-  {{/if}} --}}
+  {{/if}}
 </div>
+
+<script src='./js/newBlog.js'></script>
